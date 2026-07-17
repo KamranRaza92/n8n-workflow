@@ -1,0 +1,1 @@
+:root{--primary:#2563eb;--bg:#08111f;--text:#f8fafc}*{margin:0;padding:0;box-sizing:border-box}body{font-family:Arial,sans-serif;background:var(--bg);color:var(--text)}.hero{min-height:100vh;display:flex;align-items:center}.btn{padding:12px 24px;background:var(--primary);color:#fff;border-radius:8px;text-decoration:none}section{padding:80px 0}
