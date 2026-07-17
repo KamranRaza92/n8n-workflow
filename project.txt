@@ -1,0 +1,70 @@
+Digital-Marketing-Agency/
+│
+├── index.html
+├── about.html
+├── services.html
+├── pricing.html
+├── portfolio.html
+├── blog.html
+├── contact.html
+├── payment.html
+│
+├── assets/
+│   ├── css/
+│   │   ├── style.css
+│   │   ├── responsive.css
+│   │   ├── animation.css
+│   │   └── darkmode.css
+│   │
+│   ├── js/
+│   │   ├── app.js
+│   │   ├── slider.js
+│   │   ├── counter.js
+│   │   ├── chatbot.js
+│   │   ├── payment.js
+│   │   ├── contact.js
+│   │   └── animations.js
+│   │
+│   ├── images/
+│   ├── icons/
+│   └── fonts/
+│
+└── README.md
+
+
+
+
+
+ecause of ChatGPT's output limit, the project must be generated in parts.
+
+Part 1
+
+index.html (approximately 1,500 lines)
+
+Part 2
+
+Complete CSS
+
+Part 3
+
+JavaScript
+
+Part 4
+
+About, Services, Pricing
+
+Part 5
+
+Portfolio, Blog
+
+Part 6
+
+Contact + Payment + Integrations
+
+Part 7
+
+Stripe, PayPal, Razorpay implementation
+
+Part 8
+
+Final optimization and deployment guide
