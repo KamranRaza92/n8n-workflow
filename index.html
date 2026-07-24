@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admission Form</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f4f7f6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+      min-height: 100vh;
+    }
+
+    .form-container {
+      background-color: #ffffff;
+      width: 100%;
+      max-width: 650px;
+      padding: 35px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-header {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .form-header h2 {
+      color: #2c3e50;
+      font-size: 26px;
+      margin-bottom: 8px;
+    }
+
+    .form-header p {
+      color: #7f8c8d;
+      font-size: 14px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-row {
+      display: flex;
+      gap: 15px;
+    }
+
+    .form-row .form-group {
+      flex: 1;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      color: #34495e;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+      outline: none;
+      transition: border-color 0.3s ease;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: #3498db;
+    }
+
+    .radio-group,
+    .checkbox-group {
+      display: flex;
+      gap: 15px;
+      margin-top: 8px;
+    }
+
+    .radio-option,
+    .checkbox-option {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 14px;
+      color: #2c3e50;
+    }
+
+    .submit-btn {
+      width: 100%;
+      background-color: #3498db;
+      color: #ffffff;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-top: 10px;
+    }
+
+    .submit-btn:hover {
+      background-color: #2980b9;
+    }
+
+    @media (max-width: 500px) {
+      .form-row {
+        flex-direction: column;
+        gap: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <div class="form-header">
+      <h2>Admission Application Form</h2>
+      <p>Aapni maloomat darj karke form submit karein</p>
+    </div>
+
+    <form action="#" method="POST">
+      <!-- Full Name -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" name="firstName" required>
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" name="lastName" required>
+        </div>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+      </div>
+
+      <!-- Date of Birth & Gender -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob" name="dob" required>
+        </div>
+        <div class="form-group">
+          <label>Gender</label>
+          <div class="radio-group">
+            <label class="radio-option">
+              <input type="radio" name="gender" value="male" required> Male
+            </label>
+            <label class="radio-option">
+              <input type="radio" name="gender" value="female"> Female
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Course Selection -->
+      <div class="form-group">
+        <label for="course">Select Course</label>
+        <select id="course" name="course" required>
+          <option value="" disabled selected>Select a course...</option>
+          <option value="web-dev">Webpreneur 101: Creating Wealth Online</option>
+          <option value="shopify">Shopify E-Commerce</option>
+          <option value="n8n">n8n Automation Course</option>
+          <option value="fb-auto">Facebook Automation</option>
+          <option value="graphic-design">Graphic Design / Adobe</option>
+        </select>
+      </div>
+
+      <!-- Address -->
+      <div class="form-group">
+        <label for="address">Address</label>
+        <textarea id="address" name="address" rows="3"></textarea>
+      </div>
+
+      <!-- Terms & Conditions -->
+      <div class="form-group">
+        <div class="checkbox-option">
+          <input type="checkbox" id="terms" name="terms" required>
+          <label for="terms" style="margin-bottom: 0; font-weight: normal;">Main tamam sharaait (Terms & Conditions) se muttafiq hoon.</label>
+        </div>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="submit-btn">Submit Form</button>
+    </form>
+  </div>
+
+</body>
+</html>
